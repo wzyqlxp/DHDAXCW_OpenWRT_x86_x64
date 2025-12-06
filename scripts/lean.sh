@@ -27,16 +27,16 @@ rm -rf openwrt-package/luci-app-verysync
 # apppppppp
 git clone --depth=1 https://github.com/DHDAXCW/dhdaxcw-app
 
-# Add luci-app-ssr-plus
-git clone --depth=1 https://github.com/fw876/helloworld
+# 移除ssr-plus/helloworld（翻墙相关）
+# git clone --depth=1 https://github.com/fw876/helloworld
 
-# Add luci-app-passwall
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
+# 移除passwall相关
+# git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages
+# git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2
+# git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
 
-# Add OpenClash
-git clone --depth=1 https://github.com/vernesong/OpenClash
+# 移除OpenClash
+# git clone --depth=1 https://github.com/vernesong/OpenClash
 
 # Add luci-theme
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
@@ -47,9 +47,9 @@ rm -rf ./luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 cp -f $GITHUB_WORKSPACE/data/bg1.jpg luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 git clone https://github.com/DHDAXCW/theme
 
-# Add luci-app-lucky
-git clone --depth=1 -b 2.13.4 https://github.com/DHDAXCW/luci-app-lucky
-rm -rf ../../customfeeds/packages/net/lucky
+# 移除Lucky
+# git clone --depth=1 -b 2.13.4 https://github.com/DHDAXCW/luci-app-lucky
+# rm -rf ../../customfeeds/packages/net/lucky
 
 # alist
 git clone -b lua --depth=1 https://github.com/sbwml/luci-app-alist
@@ -79,6 +79,7 @@ rm -rf nas-packages-luci/luci/luci-app-istorex
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/lang/golang
 rm -rf package/feeds/packages/apk
+# 移除AdGuardHome
 rm -rf package/feeds/packages/adguardhome
 
 # Change default shell to zsh
